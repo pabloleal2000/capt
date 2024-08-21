@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trate Agora</title>
+    <link rel="icon" href="img/trateagora/logomao.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html">
+          <img class="logo" src="img/trateagora/logotrateagora.png" alt="">
+        </a>
+        <button class="faleconosco" id="botaoGlobal">Fale Conosco</button>
+        <button class="hamburger"></button>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="clinicas.html">Clinicas</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="inicio">
+      <div class="blur-layer">
+
+      </div>
+
+
+
+      <div class="texto-sobre-imagem1">As Melhores clinicas</div>
+      <div class="texto-sobre-imagem2">Dependencia<br> Quimica e<br> Alcoolismo</div>
+      <div class="texto-sobre-imagem3">Nossos tratamentos já libertaram centenas de
+        pessoas que buscaram nossa ajuda. Entre em
+        contato e conheça melhor o nosso trabalho.</div>
+      <div class="container-botao-pai">
+        <button class="botao1" id="botaoGlobal">Ligue Agora</button>
+        <button class="botao2"id="botaoGlobal">
+          <img src="img/logowhats/whatslogo.png" alt="Logo" class="logo-no-botao" style="width: 40px; height: 40px;">
+          WhatsApp</button>
+        </div>
+
+      </div>
+      
+    
+   
+
+    <div class="quemsomos">
+        <h1>Quem Somos</h1>
+        <p>Há 25 anos, dedicamo-nos a transformar vidas<br> 
+          e reintegrar pessoas à sociedade com carinho <br> 
+          e profissionalismo. Nossos especialistas estão <br> 
+          comprometidos em oferecer o melhor cuidado <br> 
+          para aqueles que você mais ama,<br>  
+          proporcionando suporte e esperança em cada <br> 
+          passo do caminho. Junte-se a nós e descubra <br> 
+          como podemos fazer a diferença juntos.</p>
+          <button id="botaoGlobal">Fale Conosco</button>
+    </div>
+
+    <div class="convenio">
+      <div class="testando">
+        <h1>Planos de Saúde</h1>
+      </div>
+      <div class="imgconvenio">
+        <img src="img/logoconvenio/bradesco.png" alt="">
+        <img src="img/logoconvenio/unimed.png" alt="">
+        <img src="img/logoconvenio/sulamerica.png" alt="">
+        <p>Outros</p>
+      </div>
+    </div>
+
+
+
+
+
+    
+  <!-- Script para variaveis dos botoes -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // Variável global para o link
+    var linkGlobal = "https://wa.me/5511940080359?text=Ola%20Gostaria%20de%20saber%20mais%20sobre%20cl%C3%ADnica%20de%20reabilita%C3%A7%C3%A3o";
+
+    // Função para definir o link globalmente
+    function definirLinkGlobal() {
+        var botoes = document.querySelectorAll("#botaoGlobal");
+        botoes.forEach(function(botao) {
+            botao.onclick = function() {
+                window.location.href = linkGlobal;
+            };
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        // Chama a função para definir o link global
+        definirLinkGlobal();
+    });
+</script>
+
+  </body>
+</html>

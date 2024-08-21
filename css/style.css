@@ -1,0 +1,620 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+  
+  .header {
+    background: white;
+    padding-inline: 16px;
+  }
+  
+  .nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faleconosco{
+    background-color: #44489F;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+  
+  .logo {
+    font-size: 48px;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    
+  }
+  
+  .nav-list a {
+    font-size: 18px;
+    color: black;
+    padding-block: 16px;
+  }
+  
+  
+  
+  .hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid black;
+    cursor: pointer;
+
+  }
+  
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+
+  }
+
+
+.carroseltitle{
+    filter: drop-shadow(0px 0px 10px black);
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 50px;
+
+    display: flex;
+    align-items: center;
+}
+.container{
+    display: flex;
+    transition: 0.7s ease-in-out;
+    transform: translate(0);
+
+    
+}
+.container img {
+   height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.quemsomos{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.quemsomos h1{
+  color: #44489F;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+}
+.quemsomos p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+.quemsomos button{
+  background-color: #44489F;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 100px 10px 100px;
+  cursor: pointer;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+.convenio{
+  width: 100%;
+  
+  background-color: #EAEAEA;
+  color: #44489F;
+
+  justify-content: center;
+  align-items: center;
+ 
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.convenio h1{
+  display: flex;
+  align-items: center;
+}
+.convenio img{
+  width: 150px;
+  height: 140px;
+}
+.imgconvenio{
+  display: flex;
+  gap: 50px;
+  padding-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.testando{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.inicio{
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  width: 100%;
+  height: 600px;
+}
+.blur-layer {
+  width: 100%;
+  height: 600px;
+  background-image: url('../img/carroseltitle/erimus.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(2px); /* Ajuste o valor do blur conforme necessário */
+  z-index: -1; /* Coloca a camada de desfoque atrás do conteúdo da div */
+  position: absolute; /* Necessário para cobrir toda a área do contêiner */
+  top: 0;
+  left: 0;
+}
+
+
+.inicio button{
+  border: none;
+  margin: 30px 20px;
+}
+.botao1{
+  background-color: #44489F;
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+
+  padding: 30px;
+  border-radius: 20px; 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.botao2{
+  background-color: #27D045;
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+
+  padding: 20px;
+  border-radius: 20px; 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-sobre-imagem1{
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+
+  margin: 0 20px;
+  padding-top: 100px;
+}
+.texto-sobre-imagem2{
+  color: white;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+
+  margin: 0 20px;
+}
+.texto-sobre-imagem3{
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+
+  margin: 0 20px;
+}
+
+.container-botao-pai{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*clinicas.html*/
+.tituloclinicas{
+
+  margin: 30px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+
+  color: #44489F;
+}
+
+.fundoconteinerclinicas{
+  width: 500px;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #EAEAEA;
+}
+.conteinerpaiclinicas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 80px;
+}
+.contaaaaa1{
+  border-radius: 20px;
+  width: 600px;
+  height: 500px;
+
+  background-color: #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contaaaaa{
+  border-radius: 20px;
+  width: 1000px;
+  height: 500px;
+
+  background-color: #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contaaaaa1 p{
+  padding-top: 20px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.contaaaaa1 button{
+  background-color: #44489F;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 210px 10px 210px;
+  cursor: pointer;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* Clinica1.html */
+
+.tituloclinicass{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  
+
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 55px;
+}
+
+.textoclinicass{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+.textoclinicass {
+  line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+  word-wrap: break-word; /* Garante que as palavras se ajustem ao tamanho da linha */
+  overflow-wrap: break-word; /* Quebra palavras longas */
+  display: block; /* Garante que o elemento seja exibido como um bloco */
+  margin: 0px 200px 0px 200px;
+}
+
+  
+  @media (max-width: 750px) {
+    .logo{
+      width: 200px;
+      height: 50px;
+    }
+    .quemsomos{
+      padding-top: 0;
+    }
+    .quemsomos h1{
+      font-size: 25px;
+    }
+    .quemsomos p{
+      font-size: 15px;
+    }
+    .hamburger {
+      display: block;
+      z-index: 2;
+    }
+  
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: white;
+      clip-path: circle(100px at 90% -15%);
+      transition: 1s ease-out;
+  
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+  
+      pointer-events: none;
+      z-index: 1;
+    }
+  
+    .nav-list a {
+      font-size: 24px;
+      opacity: 0;
+    }
+  
+    .nav-list li:nth-child(1) a {
+      transition: 0.5s 0.2s;
+    }
+  
+    .nav-list li:nth-child(2) a {
+      transition: 0.5s 0.4s;
+    }
+  
+    .nav-list li:nth-child(3) a {
+      transition: 0.5s 0.6s;
+    }
+  
+    /* Estilos ativos */
+  
+    .nav.active .nav-list {
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all;
+    }
+  
+    .nav.active .nav-list a {
+      opacity: 1;
+    }
+  
+    .nav.active .hamburger {
+      position: fixed;
+      top: 26px;
+      right: 16px;
+      border-top-color: transparent;
+    }
+  
+    .nav.active .hamburger::before {
+      transform: rotate(135deg);
+    }
+  
+    .nav.active .hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+    .fundoconteinerclinicas{
+      width: 300px;
+      height: 200px;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      background-color: #EAEAEA;
+    }
+    .contaaaaa{
+      border-radius: 20px;
+      width: 350px;
+      height: 350px;
+    
+      background-color: #EAEAEA;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .contaaaaa1{
+      border-radius: 20px;
+      width: 350px;
+      height: 350px;
+    
+      background-color: #EAEAEA;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .contaaaaa1 button{
+      background-color: #44489F;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      padding: 10px 110px 10px 110px;
+      cursor: pointer;
+    
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+    
+      margin-top: 10px;
+    }
+    .fundoconteinerclinicas{
+      z-index: 1;
+    }
+
+    .textoclinicass{
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   
+    
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 11px;
+    }
+    .textoclinicass {
+      line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+      word-wrap: break-word; /* Garante que as palavras se ajustem ao tamanho da linha */
+      overflow-wrap: break-word; /* Quebra palavras longas */
+      display: block; /* Garante que o elemento seja exibido como um bloco */
+      margin: 0px 25px 0px 25px;
+    }
+    .tituloclinicass{
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 25px;
+      margin-bottom: 25px;
+
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      font-size: 25px;
+    }
+    
+  }
+
+  @media (max-width: 600px) {
+    .imgconvenio img{
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+
+.fullscreen-img {
+
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.fullscreen-img img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
