@@ -287,8 +287,10 @@
 
 /*clinicas.html*/
 .tituloclinicas{
+    
 
   margin: 30px;
+  display:none;
 
   font-family: "Poppins", sans-serif;
   font-weight: 400;
